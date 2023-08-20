@@ -101,5 +101,10 @@ app.post('/login', async (req, res) => {
     }
 })
 
+app.get("/dashboard", (req, res) => {
+    res.send('Welcome to Dashboard')
+})
+
+
 
 module.exports = app
