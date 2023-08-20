@@ -16,11 +16,10 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         default: null
-    }
-    //token: {
-    //    type: String,
-    //    default: null
-    //},
+    },
+    forgotPasswordToken: String,
+    forgotPasswordExpiry: Date,
 })
+
 
 module.exports = mongoose.model("user", userSchema)
